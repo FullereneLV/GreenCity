@@ -25,7 +25,7 @@ import java.time.ZonedDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 import javax.validation.Valid;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
@@ -44,7 +44,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 @Setter
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PlaceServiceImpl implements PlaceService {
     private final PlaceRepo placeRepo;
     private final ModelMapper modelMapper;
